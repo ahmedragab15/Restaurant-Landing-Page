@@ -7,7 +7,7 @@
 }
 
 :root {
-  --main-color: rgb(227, 97, 5);
+  --main-color: #e36105;
   --sec-color: #383848;
   scroll-behavior: smooth;
 }
@@ -17,15 +17,15 @@
   background-color: var(--sec-color);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 5px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: var(--sec-color);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
 
@@ -131,7 +131,7 @@ h2 {
 
 header {
   height: 100vh;
-  background: url("./img/home_bg.jpeg")no-repeat center/cover ;
+  background: url("./img/home_bg.jpeg") no-repeat center/cover;
   position: relative;
 }
 
@@ -288,7 +288,9 @@ header .content p {
   background: #f4f2ed;
   padding: 5rem 0;
 }
-
+#menu .title {
+  margin-bottom: 1rem;
+}
 #menu .title h2 {
   color: var(--sec-color);
 }
@@ -297,10 +299,18 @@ header .content p {
   font-weight: 500;
 }
 
-#menu .menu-items {
+#menu .category-buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 2rem;
+}
+#menu .category-buttons .btn {
+  margin: 0;
+}
+
+#menu .menu-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #menu .menu-items .menu-item {
@@ -349,7 +359,7 @@ header .content p {
 }
 
 #daytime {
-  background: url("./img/daytime_bg.jpeg")no-repeat center /cover fixed ;
+  background: url("./img/daytime_bg.jpeg") no-repeat center / cover fixed;
   color: #fff;
   text-align: center;
 }
@@ -371,7 +381,7 @@ header .content p {
 }
 
 #gallery {
-  background: url("./img/offer-background.jpg")no-repeat center center/cover;
+  background: url("./img/offer-background.jpg") no-repeat center center/cover;
   padding: 8rem 0;
 }
 
@@ -593,7 +603,7 @@ form button {
     #menu .menu-items .menu-item {
       margin: 20px 10px;
     }
-    
+
     #menu .menu-items .menu-item:hover {
       transform: scale(1);
     }
